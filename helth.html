@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- غير الصوره في المكانين -->
+        <meta name="og:image" content="https://alrahma.gitlab.io/images/IMG-20240727-WA0005_1_.jpg">
+        <meta name="twitter:image" content="https://alrahma.gitlab.io/images/IMG-20240727-WA0005_1_.jpg">
+
+
+
+        <script src="name-img.js"></script>
+        <title>صدقة جارية</title>
+        <script>
+                document.title = "صدقة جارية عن " + name
+        </script>
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJT241LDN4"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BJT241LDN4');
+        </script>
+
+
+        <!-- إضافة مكتبة AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+                button {
+                        margin-top: 10px !important;
+                        margin-bottom: 20px !important;
+                }
+
+
+                h2 {
+                        margin-top: 10px !important
+                }
+
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        direction: rtl;
+                        text-align: center;
+                        background-color: #f5f5f5;
+                        background-image: url('https://alrahma.gitlab.io/images-radio/ground.jpg');
+                        background-size: cover;
+                        background-attachment: fixed;
+                }
+
+                header {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 0.2em 0.2;
+                        font-size: 0.8em;
+                }
+
+                img {
+                        max-width: 95%;
+                        height: auto;
+                        cursor: pointer;
+                        margin: 0.1em 0;
+                }
+
+                .radio-image {
+                        max-width: 50%;
+                }
+
+                section {
+                        padding: 0em;
+                        margin: -0.5em 0;
+                        background: rgba(255, 255, 255, 0.4);
+                        border-radius: 8px;
+                }
+
+                footer {
+                        //background-color: #333;
+                        color: white;
+                        padding: 0.2em 0;
+                        font-size: 0.8em;
+                        position: fixed;
+                        width: 100%;
+                        bottom: 0;
+                }
+
+                audio {
+                        width: 100%;
+                        display: none;
+                        border: none;
+                        background: #f1f1f1;
+                        border-radius: 8px;
+                }
+
+                iframe {
+                        width: 90%;
+                        margin-bottom: 25px;
+                        height: 90vh;
+                }
+
+                .footer-link {
+                        color: #4CAF50;
+                        text-decoration: none;
+                }
+
+                .contact-info {
+                        background-color: #f4f4f4;
+                        padding: 0.0em;
+                        margin: 0.0em 0;
+                }
+
+                .whatsapp-box {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 0.5em;
+                        margin: 0.5em 0;
+                        border-radius: 8px;
+                        display: inline-block;
+                        cursor: pointer;
+                        text-decoration: none;
+                        font-size: 19px;
+
+                        background-color: #347235 !important;
+                        border: none;
+                }
+
+                .whatsapp-box:hover {
+                        background-color: #45a049;
+                }
+
+                .text-overlay {
+                        margin-bottom: -1.3em;
+                        font-size: 1em;
+                        color: #333;
+                }
+
+                .spacer {
+                        height: 2em;
+                }
+
+                .counter-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                }
+
+                .counter {
+                        font-size: 4em;
+                        margin: 0.5em 0;
+                        color: #fff;
+                        background-color: #4CAF50;
+                        border: 2px solid #4CAF50;
+                        border-radius: 50%;
+                        width: 150px;
+                        height: 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .counter-button {
+                        padding: 1em 2em;
+                        font-size: 1.5em;
+                        margin: 0.5em;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 50px;
+                        background-color: #4CAF50;
+                        color: white;
+                        transition: background-color 0.3s ease;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .counter-button:hover {
+                        background-color: #45a049;
+                }
+
+                .counter-button:active {
+                        transform: scale(0.95);
+                }
+
+                .logo {
+                        max-width: 80%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                }
+
+                .logo-container {
+                        margin: 1em 0;
+                }
+
+                .custom-audio-controls {
+                        margin-bottom: 30px;
+                        max-width: 700px;
+                        text-align: center;
+                        margin-right: auto;
+                        margin-left: auto;
+                }
+
+                .custom-audio-controls button {
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        padding: 0.5em 0.5em;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 1em;
+                        margin: 0 0.2em;
+                        transition: background-color 0.3s;
+                }
+
+                .custom-audio-controls button:hover {
+                        background-color: #45a049;
+                }
+        </style>
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
+        <header data-aos="fade-up" class="aos-init aos-animate">
+                <img src="https://alrahma.gitlab.io/images-radio/greenrahma.png" alt="Logo" class="logo">
+                <img id="the-img">
+                <script>
+                        document.getElementById("the-img").src = img + ".jpg"
+                </script>
+        </header>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <h3 id="the-name" style="margin: 30px 0;"></h3>
+                <script>
+                        document.getElementById("the-name").innerHTML = "اللهم بلغ ثواب ما نسمعه من القرأن إلي روح " + name
+                </script>
+        </section>
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                </div>
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/doaa.png" alt="دعاء للمتوفي" onclick="playRadio('doaa')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('doaa').play()">تشغيل</button>
+                        <button onclick="document.getElementById('doaa').pause()">إيقاف</button>
+                </div>
+                <audio id="doaa" controls="">
+                        <source src="https://alrahma.gitlab.io/images-radio/doaa .mp3" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+        </section>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h2 style="margin-bottom: 20px;">بث مباشر مكة المكرمة</h2>
+                </div>
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/RADIO-SUDIA.jpg" alt="بث مباشر مكة المكرمة" onclick="playRadio('mekalive')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('mekalive').play()">تشغيل</button>
+                        <button onclick="document.getElementById('mekalive').pause()">إيقاف</button>
+                </div>
+                <audio id="mekalive" controls="">
+                        <source src="https://stream.radiojar.com/4wqre23fytzuv" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+
+        </section>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h2 style="margin-bottom: 20px;"> اذاعة القرآن الكريم من المغرب</h2>
+                </div>
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/media-fm-maragush.jpg" alt=" اذاعة القرآن الكريم من المغرب" onclick="playRadio('morocco')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('morocco').play()">تشغيل</button>
+                        <button onclick="document.getElementById('morocco').pause()">إيقاف</button>
+                </div>
+                <audio id="morocco" controls="">
+                        <source src="https://medinacoran.ice.infomaniak.ch/medinacoran-128.mp3" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+        </section>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h2 style="margin-bottom: 20px;"> إاذاعة القران الكريم فلسطين نابلس</h2>
+                </div>
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/nables.png" alt=" اذاعة القران الكريم فلسطين نابلس" onclick="playRadio('nabless')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('nabless').play()">تشغيل</button>
+                        <button onclick="document.getElementById('nabless').pause()">إيقاف</button>
+                </div>
+                <audio id="nabless" controls="">
+                        <source src="https://quran-radio.org:8444/;?type=http&amp;nocache=19" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+
+        
+        </section>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/ezaha.png"  alt=" إذاعة القرآن الكريم من القاهرة" onclick="playRadio('radio')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('radio').play()">تشغيل</button>
+                        <button onclick="document.getElementById('radio').pause()">إيقاف</button>
+                </div>
+                <audio id="radio" controls="">
+                        <source src="https://stream.radiojar.com/8s5u5tpdtwzuv" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+        </section>
+
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h2 style="margin-bottom: 20px;">إذاعة تفسير الإمام الشعراوي</h2>
+                </div>
+                <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/al-sharawy.png" alt="إذاعة تفسير القرآن للشعراوي" onclick="playRadio('shaarawy')">
+                <div class="custom-audio-controls">
+                        <button onclick="document.getElementById('shaarawy').play()">تشغيل</button>
+                        <button onclick="document.getElementById('shaarawy').pause()">إيقاف</button>
+                </div>
+                <audio id="shaarawy" controls="">
+                        <source src="https://server3.quraan.us:8014/;*.mp3" type="audio/mpeg">
+                        مشغل الصوت غير مدعوم في متصفحك.
+                </audio>
+
+
+
+</section>
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> المزيد من القراء</h1>
+                </div>
+                                    
+               
+                               <div class="custom-audio-controls">
+   <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/mashaiekh.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="  المزيد من القراء">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml" onclick="setIPlayer('https://alrahma.gitlab.io/reder', '  المزيد من القراء')">إضغط علي
+                                الصورة </a>
+                </div>
+
+
+
+
+        </section>
+        
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> موسوعة الشيخ الشعراوي 664 ساعة صوتية</h1>
+                </div>
+                <div class="custom-audio-controls">
+
+                        <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/sharaweey-mawsouha.JPG"
+                style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="موسوعة الشيخ الشعراوي">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml"
+                                onclick="setIPlayer('https://widget.spreaker.com/player?show_id=5811880&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', 'موسوعة الشيخ الشعراوي')">إضغط علي الصورة </a>
+                </div>
+        </section>
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;">السلسلة الميسرة لتعليم التجويد الشيخ أحمد عامر</h1>
+                </div>
+
+
+                <div class="custom-audio-controls">
+                        <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/AHMEDAMER.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="السلسلة الميسرة لتعليم التجويد الشيخ أحمد عامر">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml"
+                                onclick="setIPlayer('https://widget.spreaker.com/player?show_id=5863712&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', 'السلسلة الميسرة لتعليم التجويد')">إضغط علي الصورة </a>
+                </div>
+        </section>
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> الحج والعمرة</h1>
+                </div>
+               
+                     
+               
+                <div class="custom-audio-controls">
+   <img class="radio-image" src="https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/3cc876ad7f05f44e9296440932502e72.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="  الحج والعمرة">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml" onclick="setIPlayer('https://widget.spreaker.com/player?show_id=5809747&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', ' الحج والعمرة')">إضغط علي
+                                الصورة </a>
+                </div>
+
+
+
+        </section>
+
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> العشرة المبشرين بالجنة</h1>
+                </div>
+                <div class="custom-audio-controls">
+
+                        <img class="radio-image" src="https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/517a4842f540c918ba89f9e69e39f6bc.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt=" العشرة المبشرين بالجنة">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml"
+                                onclick="setIPlayer('https://widget.spreaker.com/player?show_id=5811861&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', ' العشرة المبشرين بالجنة')">إضغط علي الصورة </a>
+                </div>
+
+
+        </section>
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> نابلسي خطب الجمعة</h1>
+                </div>
+                
+                     
+                <div class="custom-audio-controls">
+   <img class="radio-image" src="https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/83807a0b65998bcca62f24451b48c4b4.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="   نابلسي خطب الجمعة">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml" onclick="setIPlayer('https://widget.spreaker.com/player?show_id=4319623&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', ' نابلسي خطب الجمعة')">إضغط
+                                علي الصورة </a>
+                </div>
+
+
+        </section>
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> خطب ودروس الجمعة عمر عبد الكافي</h1>
+                </div>
+                       
+                <div class="custom-audio-controls">
+ <img class="radio-image" src="https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/80fcc4d67d5322a1cfb8088eca84084f.jpg"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="      خطب ودروس الجمعة عمر عبد الكافي">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml"
+                                onclick="setIPlayer('https://widget.spreaker.com/player?show_id=6137139&amp;theme=dark&amp;playlist=show&amp;playlist-continuous=true&amp;chapters-image=true', 'خطب ودروس الجمعة عمر عبد الكافي' )">إضغط علي الصورة </a>
+
+                </div>
+
+        </section>
+
+<section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h2>اقرأ القرآن الآن مباشرة من المصحف الشريف</h2>
+                </div>                  
+                <div class="custom-audio-controls">
+   <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/quran1.png"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="القرآن الكريم">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml" onclick="setIPlayer('https://quran.com/ar', 'القرآن الكريم')">إضغط
+                                علي الصورة </a>
+                </div>
+
+
+
+         </section>
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="text-overlay">
+                        <h1 style="margin-bottom: 30px;"> حصن المسلم</h1>
+                         <p>حصّن نفسك وأهل بيتك بالأذكار والأوراد الصحيحة من القرآن الكريم والسنة النبوية المطهرة</p>
+                </div>                  
+                <div class="custom-audio-controls">
+   <img class="radio-image" src="https://alrahma.gitlab.io/images-radio/elmoslem.png"
+             style="border-radius: 15%; width: 80%; height: auto; max-width: 800px;" alt="حصن المسلم">
+                        <a href="#" class="btn btn-success stretched-link" data-bs-toggle="modal"
+                                data-bs-target="#iframeHtml" onclick="setIPlayer('https://hisnmuslim.com/i/ar/1', ' حصن المسلم')">إضغط
+                                علي الصورة </a>
+                </div>
+
+
+       
+        </section>
+        <section data-aos="fade-up" class="aos-init aos-animate">
+                <div class="counter-container">
+                        <h2 style="margin-top: 20px;">مسبحة إسلامية</h2>
+                        <div class="counter" id="counter">0</div>
+                        <button class="counter-button" onclick="increaseCount()">سبح</button>
+                        <button class="counter-button" onclick="resetCount()">إعادة تعيين</button>
+                </div>
+        </section>
+
+        <p> <br>
+
+
+
+        </p>
+        <div class="spacer"></div>
+        <footer data-aos="fade-up" class="aos-init aos-animate">
+                <!-- <p>{ وَمَا تُقَدِّمُوا لِأَنْفُسِكُمْ مِنْ خَيْر تَجِدُوهُ عِنْد اللَّه } نسألكم الدعاء لصاحب هذه الصفحة لتكون صدقة جارية له</p>-->
+                <button type="button" class="whatsapp-box" style="margin-bottom: 0 !important" data-bs-toggle="modal" data-bs-target="#myModal" style="font-size: 17px;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           اضغط هنا لعمل صدقة جارية للغالين عليك
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             </button>
+        </footer>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        <h4 class="modal-title">🕌 صدقة جارية للمتوفين بموقع (صدقة الرحمة) مدى الحياة!
+                                                🌟</h4>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+
+                                        <ul>
+                                                <li>موقع إسلامي خاص بك، يشمل إذاعة القرآن الكريم وإذاعات مشايخ القرآن
+                                                        بدون إعلانات.</li>
+                                                <li>يتيح لك قراءة القرآن وإهداء ثوابه لأرواح المتوفين ويضم حصن المسلم.
+                                                </li>
+                                                <li> بـ 100 جنيه من داخل مصر.</li>
+                                                <li> بـ 10 دولار من خارجها .</li>
+                                                <li>راسلنا وأرسل صورة واسم المتوفى، وسنقوم بتصميم الموقع وإرسال الرابط
+                                                        لك.</li>
+                                                <li>الدفع بعد الاستلام ورضاك التام.</li>
+                                        </ul>
+                                        <p>💰 <strong>للدفع:</strong> تحويل 100 جنيه عبر أي من المحافظ الإلكترونية أو
+                                                انستا بي أو فوري بلس أو حساب بنكي.</p>
+                                        <a href="https://wa.me/201501515283?text=أرغب في الحصول على صدقة جارية مماثلة"
+                                                class="whatsapp-box" target="_blank">تواصل معنا عبر واتساب</a>
+
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">إغلاق</button>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+
+        <div class="modal fade" id="iframeHtml" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header text-center center center-text" style="display: block;">
+                                        <h4 id="iframeTitle" class="modal-title modal-title-center"></h4>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                        <iframe id="playerIframe" width="95%" height="100%" frameborder="0"></iframe>
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">إغلاق</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- إضافة مكتبة AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+                function setIPlayer(src, name) {
+                        iframeTitle.innerHTML = name;
+                        playerIframe.src = src
+                }
+
+
+
+                if (name === undefined)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           document.querySelector("body").innerHTML = "404"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           // تهيئة مكتبة AOS مع تسريع التأثيرات
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   AOS.init({
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   duration: 600, // مدة التأثيرات بالمللي ثانية (أقل = أسرع)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               easing: 'ease-in-out', // نوع التأثير
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           once: false // تشغيل التأثير في كل مرة يتم فيها التمرير إلى العناصر
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   });
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           document.addEventListener("touchstart", () => {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   navigator.wakeLock.request()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }) 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       navigator.wakeLock.request()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               // تشغيل إذاعة معينة وإيقاف الإذاعات الأخرى
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       function playRadio(id) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       const radios = document.querySelectorAll('audio');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   radios.forEach(radio => radio.pause());
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               document.getElementById(id).play();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           try {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           navigator.wakeLock.request()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           } catch(e) {}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               // مسبحة إسلامية
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       let count = 0;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               function increaseCount() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               count++;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           document.getElementById('counter').innerText = count;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       function resetCount() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       count = 0;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   document.getElementById('counter').innerText = count;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               // الاحتفاظ بتشغيل الصوت في الخلفية
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       document.addEventListener('visibilitychange', function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       if (document.hidden) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           const playingAudio = document.querySelector('audio:playing');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           if (playingAudio) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   playingAudio.play().catch(error => console.log('Error playing audio:', error));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  try {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  navigator.wakeLock.request()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  } catch(e) {}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       });
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               // كود يساعد على تشغيل الصوت في خلفية المتصفح في الأندرويد
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       document.addEventListener('play', function(e) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       const audios = document.getElementsByTagName('audio');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   for(let i = 0, len = audios.length; i < len;i++){
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       if(audios[i] != e.target){
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               audios[i].pause();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }, true);
+        </script>
+
+
+</body>
+
+</html>
